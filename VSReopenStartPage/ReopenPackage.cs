@@ -1,10 +1,9 @@
-﻿using EnvDTE;
+﻿using System.Runtime.InteropServices;
+using EnvDTE;
 using Microsoft.VisualStudio.Shell;
 using Microsoft.VisualStudio.Shell.Interop;
-using System;
-using System.Runtime.InteropServices;
 
-namespace ReopenStartPage
+namespace VSReopenStartPage
 {
     [PackageRegistration(UseManagedResourcesOnly = true)]
     [InstalledProductRegistration("#110", "#112", "1.0", IconResourceID = 400)]
@@ -25,6 +24,5 @@ namespace ReopenStartPage
             IVsSolution vsSolution = (IVsSolution)ServiceProvider.GlobalProvider.GetService(typeof(SVsSolution));
             vsSolution.AdviseSolutionEvents(vsSolutionEvents, out solutionEventsCookie);
         }
-
     }
 }

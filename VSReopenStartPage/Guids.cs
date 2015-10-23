@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace ReopenStartPage
+namespace VSReopenStartPage
 {
     static class GuidList
     {

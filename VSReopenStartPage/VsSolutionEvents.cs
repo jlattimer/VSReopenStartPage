@@ -3,7 +3,7 @@ using Microsoft.VisualStudio;
 using Microsoft.VisualStudio.Shell;
 using Microsoft.VisualStudio.Shell.Interop;
 
-namespace ReopenStartPage
+namespace VSReopenStartPage
 {
     public sealed class VsSolutionEvents : IVsSolutionEvents
     {
